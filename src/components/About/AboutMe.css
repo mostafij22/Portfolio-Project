@@ -1,0 +1,151 @@
+
+
+.about_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+.about-me{
+    width: 300px;
+    height: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg,transparent,green,transparent);
+    display: grid;
+    place-items: center;
+}
+
+.about-me-image{
+    width: 300px;
+    height: 300px;
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(-10deg);
+    transition: .3s;
+}
+.about-me-image img{
+    width: 100%;
+}
+.about-me-image:hover{
+    transform: rotate(0);
+}
+
+.about-content-right{
+    display: grid;
+    align-items: center;
+}
+.about-content-right span{
+    color: green;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.about-content-right h4{
+    color: orangered;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.about-content-right p{
+    color: white;
+    text-align: justify;
+}
+
+
+
+.about-btn-wrap{
+    display: flex;
+}
+
+.about-btn-right{
+    width: 110px;
+    margin-right: 10px;
+    background: green;
+    transition: .2s;
+}
+.about-btn-right:hover{
+    background: transparent;
+    border: 1px;
+    outline: auto;
+}
+
+.about-btn-left{
+    width: 110px;
+    margin-right: 10px;
+    background: orangered;
+    transition: .6s !important;
+    
+}
+.about-btn-left:hover{
+    background: transparent;
+    border: 1px;
+    outline: auto;
+}
+
+
+
+@media all and (min-width: 992px) and (max-width: 1200px){
+    .container{
+        /* width: 970px !important; */
+        width: 930px !important;
+    }
+    .about-me{
+        width: 270px;
+        height: 270px;
+    }
+    
+    .about-me-image{
+        width: 270px;
+        height: 270px;
+    }
+}
+
+/* For Small screen laptops/desktops Device: Checking Size- 800px */
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+    .about_content{
+        display: flex;
+    }
+    .about-me{
+        flex-basis: 35%;
+        width: 250px;
+        height: 250px;
+    }
+    .about-content-right{
+        flex-basis: 60%;
+    }
+    .about-me-image{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+/* For Mobile Device: Checking Size- 400px */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 400px;
+    }
+    .about_content{
+        grid-template-columns: 1fr;
+    }
+    .about-me{
+        width: 270px;
+        height: 270px;
+        margin-bottom: 30px;
+        margin-left: 50px;
+    }
+    
+    .about-me-image{
+        width: 270px;
+        height: 270px;
+    }
+
+    .about-content-right h4{
+        margin-top: 0 !important ;
+    }
+}
+

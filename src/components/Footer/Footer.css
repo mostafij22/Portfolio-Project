@@ -1,0 +1,122 @@
+.footer{
+    margin-top: 150px;
+    background: #0B1120;
+}
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.footer_title{
+    color: orangered;
+   font-size: 40px;
+   font-weight: bold;
+   font-family: 'Kaushan Script', cursive;
+}
+.footer_container span{
+    font-weight: bold;
+    font-size: 22px;
+    color: green;
+}
+
+.footer_container h3{
+    font-weight: 400;
+}
+
+
+.footer_link_title{
+    color: green;
+    font-size: 25px;
+    font-weight: bold;
+}
+.footer_links{
+    list-style: none;
+}
+.footer_links a{
+    font-size: 19px;
+    font-weight: 400;
+    list-style: none;
+    color: white;
+    margin-right: 20px;
+}
+.footer_link:hover{
+    color: orangered;
+}
+
+.footer_socials a{
+    font-size: 1.25rem;
+    margin-right: 30px;
+    /* color: aliceblue; */
+}
+.footer_socials a:hover{
+    color: orangered;
+}
+
+.cell_no{
+    display:block;
+    margin-top: 15px;
+    /* color: aliceblue; */
+}
+
+.footer_copy{
+    font-size: 20px;
+    text-align: center;
+    /* color: aliceblue; */
+    margin-top: 30px;
+}
+
+
+/* ===== Scroll Top====== */
+
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: green;
+    opacity: .8;
+    padding: 0.3rem;
+    border-radius: .4rem;
+    z-index: 10;
+}
+
+.scrollup:hover{
+    background-color: orangered;
+}
+
+.scrollup_icon{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.show-scroll{
+    bottom: 5rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* For Mobile Device: Checking Size- 400px */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 400px;
+    }
+    .footer_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    .footer_link{
+        padding: 35px 0;
+    }
+    .cell_no{
+        margin-top: 0;
+    }
+
+}
+
+
+
+

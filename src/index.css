@@ -1,0 +1,182 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Kaushan Script', cursive; */
+/*primary color: #100E1B */
+/*secondary color: #1F2233 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #0F172A;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*========== Button========= */
+button {
+    padding: 10px;
+    background: orangered;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+button:hover {
+    background: green;
+}
+
+
+/* ===========Section Title============ */
+.section-title {
+    text-align: center;
+    color: rebeccapurple;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    /* margin: 150px 0; */
+}
+
+.section-title h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: green;
+}
+
+.section-title h5 {
+    font-size: 15px;
+    font-weight: 300;
+    color: orangered;
+}
+
+
+
+/* =========Break Points=========== */
+
+/* <meta name="viewport" content="width=device-width" initial-scale=1.0> */
+/* Ctrl + Shift + m */
+
+
+/* For Large screen laptops/desktops Device: Checking Size- 1000px  */
+@media all and (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        /* width: 970px !important; */
+        width: 930px !important;
+    }
+
+    .nav-menu li a {
+        font-size: 1rem;
+    }
+}
+
+
+/* For Small screen laptops/desktops Device: Checking Size- 800px */
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+    .hamburgar {
+        display: initial;
+        cursor: pointer;
+    }
+    .nav-menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 40vh;
+        background: #0B1120;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        transition: 0.3s;
+        z-index: -3;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu li {
+        padding: .5rem 0;
+    }
+
+    .nav-menu li a {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* For Mobile Device: Checking Size- 400px */
+@media all and (min-width: 320px) and (max-width: 767px){
+    .container{
+        width: 400px;
+    }
+
+    .hamburgar {
+        display: initial;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 60vh;
+        background: #0B1120;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        transition: 0.3s;
+        z-index: -3;
+        
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu li {
+        padding: .5rem 0;
+    }
+
+    .nav-menu li a {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+}
+
+
+/* For Middle (Mobile,Tablet)  Device */
+@media all and (min-width: 480px) and (max-width: 767px) {
+    .container{
+        width: 450px;
+    }
+}
+
+

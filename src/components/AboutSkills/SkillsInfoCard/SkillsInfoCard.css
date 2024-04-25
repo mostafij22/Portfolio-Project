@@ -1,0 +1,52 @@
+.skills-info-card{
+    min-height: 18rem;
+    border-radius: 0.65rem;
+    border: 1.5px solid green;
+    background: #0B1120;
+}
+.skills-info-card h6{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+    color: green;
+    border-bottom: 1.5px solid green;
+    text-align: center;
+}
+
+.skills-info-content {
+    padding: 2rem;
+}
+
+.skill-info li{
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: space-between; */
+    text-align: center;
+    /* text-align: justify; */
+    list-style: none;
+    font-size: 20px;
+    
+}
+
+.skill-info p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+@media (max-width: 1025px){
+    .skills-info-card h6{
+        font-size: 1.1rem;
+    }
+    .skill-info p{
+        font-size: 0.9rem;
+    }
+    .skills-info-content{
+        padding: 1.5rem;
+    }
+}
+
+
+
+
+

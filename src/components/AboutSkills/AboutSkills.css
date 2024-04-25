@@ -1,0 +1,39 @@
+.skills-container{
+    margin: 4rem 0;
+    position: relative;
+}
+
+
+.skills-content{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+  
+}
+
+.skills{
+    display: grid;
+    grid-gap: 10px;
+}
+
+
+
+/* For Mobile Device: Checking Size- 400px */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 400px;
+    }
+    .skills-content{
+        grid-template-columns: 1fr;    
+    }
+    
+    .skills{
+        display: grid;
+        grid-gap: .5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+

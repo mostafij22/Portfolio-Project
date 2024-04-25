@@ -1,0 +1,81 @@
+.work-experience-card{
+    /* background: #130f2a; */
+    background: #0B1120;
+    border-radius: 0.65rem;
+    border: 1.5px solid white;
+    padding: 1.5rem;
+    margin: 0 1rem;
+}
+
+.work-experience-card h6{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+    color: green;
+}
+
+.work-duration{
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    /* background: rgba(103, 81, 185, 0.5); */
+    background: #0F172A;
+    border-radius: 0.3rem;
+    padding: 0.4rem 0.6rem;
+    margin-bottom: 1.3rem;
+    border: 1.5px solid white;
+}
+
+.work-experience-card ul li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    position: relative;
+    text-align: justify;
+}
+
+.work-experience-card ul li::after {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    /* background-color: #6751b9; */
+    background-color: #0F172A;
+    border-radius: 0.5rem;
+    position: relative;
+    left: -1.3rem;
+    top: 0.35rem;
+}
+
+
+
+
+
+@media all and (min-width: 992px) and (max-width: 1200px){
+    .container{
+        /* width: 970px !important; */
+        width: 930px !important;
+    }
+    .work-experience-card h6{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .work-experience-card h6{
+        font-size: 1.5rem;
+    }
+    
+}
+
+/* For Small screen laptops/desktops Device: Checking Size- 800px */
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+    
+    .work-experience-card h6{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+   
+}
+

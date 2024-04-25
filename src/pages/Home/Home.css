@@ -1,0 +1,166 @@
+/*=====HeroSection====== */
+
+
+.hero__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.hero__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__social-icon {
+    font-size: 20px;
+    margin: 15px 0;
+    color: green;
+}
+
+.hero__data h4 span {
+    color: orangered;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+.hero__description {
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.hero-btn {
+    color: white;
+}
+
+.hero-btn i {
+    margin-left: 10px;
+}
+
+.hero-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 1px 0px 0px green;
+    margin: 0 0px 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image-background {
+    height: 92%;
+    width: 92%;
+    background-image: url("../../assets/image/1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    transition: transform 1.5s;
+}
+
+.hero-image-background:hover {
+    transform: scale(1.08);
+}
+
+
+/* =========Break Points=========== */
+
+/* For laptops/desktops Device: Checking Size- 1000px */
+@media all and (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        /* width: 970px!important; */
+        width: 930px !important;
+    }
+
+    .hero__data h4 {
+        font-size: 20px;
+    }
+
+    .hero__data h4 span {
+        font-size: 30px;
+    }
+
+    .hero__description {
+        width: 420px;
+        text-align: justify;
+    }
+
+    .hero-image {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+
+}
+
+
+/* For Small screen laptops/desktops Device: Checking Size- 800px */
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+
+    .hero__social {
+        margin-right: 20px;
+    }
+
+    .hero__data h4 {
+        font-size: 15px;
+    }
+
+    .hero__data h4 span {
+        font-size: 25px;
+    }
+
+    .hero__description {
+        width: 395px;
+        text-align: justify;
+    }
+
+    .hero-image {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+    }
+}
+
+
+/* For Mobile Device: Checking Size- 400px */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 400px;
+    }
+
+    .hero__content {
+        flex-direction: column-reverse;
+    }
+
+    .hero__social {
+        flex-direction: row;
+        align-content: flex-start;
+    }
+    .hero__social a{
+        margin-right: 20px;
+    }
+    .hero__social-icon{
+        font-size: 25px;
+    }
+
+    .hero-image{
+        margin: 0;
+    }
+
+    .about_content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content-right {
+        margin-top: 1rem !important;
+    }
+    
+}

@@ -1,0 +1,36 @@
+.skills-card{
+    border-radius: 0.65rem;
+    border: 1.5px solid green;
+    padding: 1rem;
+    text-align: center;
+    background: #0B1120;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.skills-card:hover,
+.skills-card.active{
+    background:green;
+}
+
+
+.skills-card span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* For Mobile Device: Checking Size- 400px */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 400px;
+    }
+}
+
+
+
+
+
+
+
+

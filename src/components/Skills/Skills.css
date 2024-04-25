@@ -1,0 +1,166 @@
+
+.skills__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+.skills__content{
+    margin-bottom: 30px;
+}
+
+.skills__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow {
+    font-size: 2rem;
+    color: orangered;
+}
+
+.skills__icon {
+    margin-right: 12px;
+}
+
+.skills__title {
+    font-size: 24px;
+}
+
+.skills__subtitle {
+    font-size: 15px;
+    color: green;
+}
+
+.skills__arrow {
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills__list {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+.skills__titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.skills__name {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.skills__bar,
+.skills__percentage {
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills__bar {
+    background-color: orangered;
+}
+
+.skills__percentage {
+    display: block;
+    background-color: green;
+}
+
+.skills__html {
+    width: 90%;
+}
+
+.skills__css {
+    width: 80%;
+}
+
+.skills__js {
+    width: 60%;
+}
+
+.skills__react {
+    width: 85%;
+}
+
+.skills__php {
+    width: 80%;
+}
+
+.skills__node {
+    width: 70%;
+}
+
+.skills__firebase {
+    width: 90%;
+}
+
+.skills__python {
+    width: 55%;
+}
+
+.skills__figma {
+    width: 90%;
+}
+
+.skills__sketch {
+    width: 85%;
+}
+
+.skills__photoshop {
+    width: 85%;
+}
+
+
+
+.skills__open .skills__list {
+    height: max-content;
+    margin-bottom: 40px;
+}
+
+
+/* -----------------Toggle-------------------- */
+
+
+
+.skills__content.skills__open .skills__header .skills__arrow{
+    transform: rotate(180deg);
+}
+
+
+.skills__list{
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__content.skills__open .skills__list{
+    height: auto;
+}
+
+/* ---------------- */
+.skills__close .skills__list {
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__content.skills__close .skills__list{
+    height: auto;
+}
+.skills__content.skills__close .skills__header .skills__arrow{
+    transform: rotate(180deg);
+}
+
+
+
+/* For Mobile Device: Checking Size- 400px */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 400px;
+    }
+    .skills__container {
+        grid-template-columns: 1fr;
+    }
+}

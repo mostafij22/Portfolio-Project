@@ -1,0 +1,90 @@
+
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.portfolio_item{
+    background: #0B1120;
+    color: white;
+    padding: 1.2rem 1.2rem 0 1.2rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    transition: 3s;
+}
+
+.portfolio_item:hover{
+    border-color: white;
+    background: transparent;
+}
+
+.portfolio_item-image{
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.portfolio_item-image img{
+    width: 100%;
+}
+
+.portfolio_item h3{
+    margin-top: 1rem ;
+    font-size: 20px;
+}
+
+.portfolio-item-cta{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.git-btn{
+    padding: 10px;
+    color:white;
+    background: orangered;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    transition: .5s;
+}
+.git-btn:hover{
+    background: green;
+}
+.live-btn{
+    padding: 10px;
+    color:white;
+    background: green;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    transition: .5s;
+}
+
+.live-btn:hover{
+    background:orangered;
+}
+
+
+/* For Small screen laptops/desktops Device: Checking Size- 800px */
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+    .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+/* For Mobile Device: Checking Size- 400px */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 400px;
+    }
+    .portfolio-container{
+        grid-template-columns: 1fr ;
+    }
+   
+}
+

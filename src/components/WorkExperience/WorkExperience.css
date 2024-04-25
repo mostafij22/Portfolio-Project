@@ -1,0 +1,69 @@
+.experience-container{
+    margin: 4rem 0;
+    position: relative;
+}
+
+.experience-container h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.arrow-left,
+.arrow-right{
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 0.65rem;
+    border: 1.5px solid aliceblue;
+    background: #0B1120;
+    position: absolute;
+    top: 55%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.arrow-left span,
+.arrow-right span{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.arrow-left{
+    left: -2rem;
+}
+.arrow-right{
+    right: -2rem;
+}
+
+
+@media all and (min-width: 992px) and (max-width: 1200px){
+    .arrow-left{
+        left: -1.5rem;
+    }
+    .arrow-right{
+        right: -1.5rem;
+    }
+}
+
+/* For Small screen laptops/desktops Device: Checking Size- 800px */
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+    .arrow-left{
+        left: -1.3rem;
+    }
+    .arrow-right{
+        right: -1.3rem;
+    }
+
+    
+}
+
+
+
+
+
